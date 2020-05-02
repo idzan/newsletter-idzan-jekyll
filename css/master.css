@@ -851,6 +851,7 @@ button {
   padding: 0;
   position: relative;
   vertical-align: middle;
+  background-color: #1677be;
 }
 
 .formkit-form[data-uid="81e2543d9b"] .formkit-button:hover, .formkit-form[data-uid="81e2543d9b"] .formkit-submit:hover, .formkit-form[data-uid="81e2543d9b"] .formkit-button:focus, .formkit-form[data-uid="81e2543d9b"] .formkit-submit:focus {
@@ -880,6 +881,10 @@ button {
   margin: 0;
   -webkit-transition: border-color ease-out 300ms;
   transition: border-color ease-out 300ms;
+  color: black;
+  border-color: #e3e3e3;
+  font-weight: 400;
+  border-radius: 4px;
 }
 
 .formkit-form[data-uid="81e2543d9b"] .formkit-input:focus {

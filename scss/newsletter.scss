@@ -96,6 +96,7 @@
     padding: 0;
     position: relative;
     vertical-align: middle;
+    background-color: rgb(22, 119, 190);
   }
 
   .formkit-button:hover, .formkit-submit:hover, .formkit-button:focus, .formkit-submit:focus {
@@ -125,6 +126,10 @@
     margin: 0;
     -webkit-transition: border-color ease-out 300ms;
     transition: border-color ease-out 300ms;
+    color: black;
+    border-color: rgb(227, 227, 227);
+    font-weight: 400;
+    border-radius: 4px;
 
     &:focus {
       outline: none;
