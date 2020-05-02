@@ -1,0 +1,40 @@
+---
+title: Error 404 (Page Not Found)
+description: This page was lose somewhere in Online World. At least you got this message.
+permalink: 404.html
+image: img/og-image.png
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    {% include site_verification.html %}
+
+    {% include favicons_styling.html %}
+
+    {% include header/open_graph.html %}
+
+    {% include header/twitter_card.html %}
+
+    <title>{{ page.title }}</title>
+
+    <!-- Meta Tagovi -->
+    <meta name="title" content="{{ page.title }} - Marko Idžan">
+    <meta name="description" content="{{ page.description }}">
+</head>
+<body>
+    <header>
+        {% include navigation.html %}
+    </header>
+    <main>
+        <h1>Error 404 - Page/Post/Project Not Found</h1>
+        <h3>Unfortunately, page that you are looking for isn't found on server. Please let us know more about what page you were looking for so we can help you get to information you need.</h3>
+        <a href="/contact.html">Give us information about page that you are looking for.</a>
+    </main>
+    {% include footer.html %}
+    {% include scripts.html %}
+</body>
+</html>
