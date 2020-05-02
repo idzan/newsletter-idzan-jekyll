@@ -444,9 +444,9 @@ label::after {
 .formkit-form[data-uid="81e2543d9b"] .formkit-submit {
   margin: 0 0 15px 0;
   padding: 0.25em;
-  -ms-flex: 1 0 50%;
   -webkit-box-flex: 1;
-          flex: 1 0 50%;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
 }
 
 .formkit-form[data-uid="81e2543d9b"] .formkit-powered-by {
