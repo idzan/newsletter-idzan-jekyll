@@ -750,23 +750,47 @@ button {
   transition: filter 500ms ease-in-out, -webkit-filter 500ms ease-in-out;
 }
 
-.formkit-form[data-uid="81e2543d9b"] * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
+/* .formkit-form[data-uid="81e2543d9b"] { 
 
+  body {
+    &:not(:-moz-handler-blocked) {
+      fieldset {
+        display: table-cell;
+      }
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6, p {
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+  }
+
+  legend {
+    border: none;
+    font-size: inherit;
+    margin-bottom: 10px;
+    padding: 0;
+    position: relative;
+    display: table;
+  }
+
+  fieldset {
+    border: 0;
+    padding: 0.01em 0 0 0;
+    margin: 0;
+    min-width: 0;
+  }
+} */
 .formkit-form[data-uid="81e2543d9b"] {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  max-width: 700px;
 }
 
-.formkit-form[data-uid="81e2543d9b"] legend {
-  border: none;
-  font-size: inherit;
-  margin-bottom: 10px;
-  padding: 0;
-  position: relative;
-  display: table;
+.formkit-form[data-uid="81e2543d9b"] * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .formkit-form[data-uid="81e2543d9b"] fieldset {
@@ -780,54 +804,39 @@ button {
   display: table-cell;
 }
 
-.formkit-form[data-uid="81e2543d9b"] h1,
-.formkit-form[data-uid="81e2543d9b"] h2,
-.formkit-form[data-uid="81e2543d9b"] h3,
-.formkit-form[data-uid="81e2543d9b"] h4,
-.formkit-form[data-uid="81e2543d9b"] h5,
-.formkit-form[data-uid="81e2543d9b"] h6 {
+.formkit-form[data-uid="81e2543d9b"] legend {
+  border: none;
+  font-size: inherit;
+  margin-bottom: 10px;
+  padding: 0;
+  position: relative;
+  display: table;
+}
+
+.formkit-form[data-uid="81e2543d9b"] h1, .formkit-form[data-uid="81e2543d9b"] h2, .formkit-form[data-uid="81e2543d9b"] h3, .formkit-form[data-uid="81e2543d9b"] h4, .formkit-form[data-uid="81e2543d9b"] h5, .formkit-form[data-uid="81e2543d9b"] h6, .formkit-form[data-uid="81e2543d9b"] p {
   color: inherit;
   font-size: inherit;
   font-weight: inherit;
 }
 
-.formkit-form[data-uid="81e2543d9b"] p {
-  color: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-}
-
-.formkit-form[data-uid="81e2543d9b"] ol:not([template-default]),
-.formkit-form[data-uid="81e2543d9b"] ul:not([template-default]),
-.formkit-form[data-uid="81e2543d9b"] blockquote:not([template-default]) {
+.formkit-form[data-uid="81e2543d9b"] ol:not([template-default]), .formkit-form[data-uid="81e2543d9b"] ul:not([template-default]), .formkit-form[data-uid="81e2543d9b"] blockquote:not([template-default]) {
   text-align: left;
 }
 
-.formkit-form[data-uid="81e2543d9b"] p:not([template-default]),
-.formkit-form[data-uid="81e2543d9b"] hr:not([template-default]),
-.formkit-form[data-uid="81e2543d9b"] blockquote:not([template-default]),
-.formkit-form[data-uid="81e2543d9b"] ol:not([template-default]),
-.formkit-form[data-uid="81e2543d9b"] ul:not([template-default]) {
+.formkit-form[data-uid="81e2543d9b"] p:not([template-default]), .formkit-form[data-uid="81e2543d9b"] hr:not([template-default]), .formkit-form[data-uid="81e2543d9b"] blockquote:not([template-default]), .formkit-form[data-uid="81e2543d9b"] ol:not([template-default]), .formkit-form[data-uid="81e2543d9b"] ul:not([template-default]) {
   color: inherit;
   font-style: initial;
 }
 
-.formkit-form[data-uid="81e2543d9b"][data-format="modal"] {
+.formkit-form[data-uid="81e2543d9b"][data-format="modal"], .formkit-form[data-uid="81e2543d9b"][data-format="slide in"] {
   display: none;
 }
 
-.formkit-form[data-uid="81e2543d9b"][data-format="slide in"] {
-  display: none;
-}
-
-.formkit-form[data-uid="81e2543d9b"] .formkit-input,
-.formkit-form[data-uid="81e2543d9b"] .formkit-select,
-.formkit-form[data-uid="81e2543d9b"] .formkit-checkboxes {
+.formkit-form[data-uid="81e2543d9b"] .formkit-input, .formkit-form[data-uid="81e2543d9b"] .formkit-select, .formkit-form[data-uid="81e2543d9b"] .formkit-checkboxes {
   width: 100%;
 }
 
-.formkit-form[data-uid="81e2543d9b"] .formkit-button,
-.formkit-form[data-uid="81e2543d9b"] .formkit-submit {
+.formkit-form[data-uid="81e2543d9b"] .formkit-button, .formkit-form[data-uid="81e2543d9b"] .formkit-submit {
   border: 0;
   border-radius: 5px;
   color: #ffffff;
@@ -844,22 +853,15 @@ button {
   vertical-align: middle;
 }
 
-.formkit-form[data-uid="81e2543d9b"] .formkit-button:hover,
-.formkit-form[data-uid="81e2543d9b"] .formkit-submit:hover,
-.formkit-form[data-uid="81e2543d9b"] .formkit-button:focus,
-.formkit-form[data-uid="81e2543d9b"] .formkit-submit:focus {
+.formkit-form[data-uid="81e2543d9b"] .formkit-button:hover, .formkit-form[data-uid="81e2543d9b"] .formkit-submit:hover, .formkit-form[data-uid="81e2543d9b"] .formkit-button:focus, .formkit-form[data-uid="81e2543d9b"] .formkit-submit:focus {
   outline: none;
 }
 
-.formkit-form[data-uid="81e2543d9b"] .formkit-button:hover > span,
-.formkit-form[data-uid="81e2543d9b"] .formkit-submit:hover > span,
-.formkit-form[data-uid="81e2543d9b"] .formkit-button:focus > span,
-.formkit-form[data-uid="81e2543d9b"] .formkit-submit:focus > span {
+.formkit-form[data-uid="81e2543d9b"] .formkit-button:hover > span, .formkit-form[data-uid="81e2543d9b"] .formkit-submit:hover > span, .formkit-form[data-uid="81e2543d9b"] .formkit-button:focus > span, .formkit-form[data-uid="81e2543d9b"] .formkit-submit:focus > span {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.formkit-form[data-uid="81e2543d9b"] .formkit-button > span,
-.formkit-form[data-uid="81e2543d9b"] .formkit-submit > span {
+.formkit-form[data-uid="81e2543d9b"] .formkit-button > span, .formkit-form[data-uid="81e2543d9b"] .formkit-submit > span {
   display: block;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
@@ -887,22 +889,12 @@ button {
   transition: border-color ease 300ms;
 }
 
-.formkit-form[data-uid="81e2543d9b"] .formkit-input::-webkit-input-placeholder {
+.formkit-form[data-uid="81e2543d9b"] .formkit-input::-webkit-input-placeholder, .formkit-form[data-uid="81e2543d9b"] .formkit-input::-moz-placeholder, .formkit-form[data-uid="81e2543d9b"] .formkit-input:-ms-input-placeholder, .formkit-form[data-uid="81e2543d9b"] .formkit-input::-webkit-input-placeholder {
   color: inherit;
   opacity: 0.8;
 }
 
-.formkit-form[data-uid="81e2543d9b"] .formkit-input:-ms-input-placeholder {
-  color: inherit;
-  opacity: 0.8;
-}
-
-.formkit-form[data-uid="81e2543d9b"] .formkit-input::-ms-input-placeholder {
-  color: inherit;
-  opacity: 0.8;
-}
-
-.formkit-form[data-uid="81e2543d9b"] .formkit-input::placeholder {
+.formkit-form[data-uid="81e2543d9b"] .formkit-input::-webkit-input-placeholder, .formkit-form[data-uid="81e2543d9b"] .formkit-input::-moz-placeholder, .formkit-form[data-uid="81e2543d9b"] .formkit-input:-ms-input-placeholder, .formkit-form[data-uid="81e2543d9b"] .formkit-input::placeholder {
   color: inherit;
   opacity: 0.8;
 }
@@ -954,84 +946,49 @@ button {
   margin: 0;
 }
 
-.formkit-form[data-uid="81e2543d9b"]
-[data-group="checkboxes"]
-[data-group="checkbox"] {
+.formkit-form[data-uid="81e2543d9b"] [data-group="checkboxes"] [data-group="checkbox"] {
   margin-bottom: 10px;
 }
 
-.formkit-form[data-uid="81e2543d9b"]
-[data-group="checkboxes"]
-[data-group="checkbox"]
-* {
+.formkit-form[data-uid="81e2543d9b"] [data-group="checkboxes"] [data-group="checkbox"] * {
   cursor: pointer;
 }
 
-.formkit-form[data-uid="81e2543d9b"]
-[data-group="checkboxes"]
-[data-group="checkbox"]:last-of-type {
+.formkit-form[data-uid="81e2543d9b"] [data-group="checkboxes"] [data-group="checkbox"]:last-of-type {
   margin-bottom: 0;
 }
 
-.formkit-form[data-uid="81e2543d9b"]
-[data-group="checkboxes"]
-[data-group="checkbox"]
-input[type="checkbox"] {
+.formkit-form[data-uid="81e2543d9b"] [data-group="checkboxes"] [data-group="checkbox"] input[type="checkbox"] {
   display: none;
 }
 
-.formkit-form[data-uid="81e2543d9b"]
-[data-group="checkboxes"]
-[data-group="checkbox"]
-input[type="checkbox"]
-+ label::after {
+.formkit-form[data-uid="81e2543d9b"] [data-group="checkboxes"] [data-group="checkbox"] input[type="checkbox"] + label::after {
   content: none;
 }
 
-.formkit-form[data-uid="81e2543d9b"]
-[data-group="checkboxes"]
-[data-group="checkbox"]
-input[type="checkbox"]:checked
-+ label::after {
+.formkit-form[data-uid="81e2543d9b"] [data-group="checkboxes"] [data-group="checkbox"] input[type="checkbox"]:checked + label::after {
   border-color: #ffffff;
   content: "";
 }
 
-.formkit-form[data-uid="81e2543d9b"]
-[data-group="checkboxes"]
-[data-group="checkbox"]
-input[type="checkbox"]:checked
-+ label::before {
+.formkit-form[data-uid="81e2543d9b"] [data-group="checkboxes"] [data-group="checkbox"] input[type="checkbox"]:checked + label::before {
   background: #10bf7a;
   border-color: #10bf7a;
 }
 
-.formkit-form[data-uid="81e2543d9b"]
-[data-group="checkboxes"]
-[data-group="checkbox"]
-label {
+.formkit-form[data-uid="81e2543d9b"] [data-group="checkboxes"] [data-group="checkbox"] label {
   position: relative;
   display: inline-block;
   padding-left: 28px;
 }
 
-.formkit-form[data-uid="81e2543d9b"]
-[data-group="checkboxes"]
-[data-group="checkbox"]
-label::before,
-.formkit-form[data-uid="81e2543d9b"]
-[data-group="checkboxes"]
-[data-group="checkbox"]
-label::after {
+.formkit-form[data-uid="81e2543d9b"] [data-group="checkboxes"] [data-group="checkbox"] label::before, .formkit-form[data-uid="81e2543d9b"] [data-group="checkboxes"] [data-group="checkbox"] label::after {
   position: absolute;
   content: "";
   display: inline-block;
 }
 
-.formkit-form[data-uid="81e2543d9b"]
-[data-group="checkboxes"]
-[data-group="checkbox"]
-label::before {
+.formkit-form[data-uid="81e2543d9b"] [data-group="checkboxes"] [data-group="checkbox"] label::before {
   height: 16px;
   width: 16px;
   border: 1px solid #e3e3e3;
@@ -1040,10 +997,7 @@ label::before {
   top: 3px;
 }
 
-.formkit-form[data-uid="81e2543d9b"]
-[data-group="checkboxes"]
-[data-group="checkbox"]
-label::after {
+.formkit-form[data-uid="81e2543d9b"] [data-group="checkboxes"] [data-group="checkbox"] label::after {
   height: 4px;
   width: 8px;
   border-left: 2px solid #4d4d4d;
@@ -1110,8 +1064,8 @@ label::after {
   opacity: 0.3;
   border-radius: 100%;
   display: inline-block;
-  -webkit-animation: formkit-bouncedelay-formkit-form-data-uid-81e2543d9b- 1.4s infinite ease-in-out both;
-  animation: formkit-bouncedelay-formkit-form-data-uid-81e2543d9b- 1.4s infinite ease-in-out both;
+  -webkit-animation: formkit-bouncedelay-formkit-form-data-uid-81e2543d9b- 1.4s infinite ease-in-out both;
+  animation: formkit-bouncedelay-formkit-form-data-uid-81e2543d9b- 1.4s infinite ease-in-out both;
 }
 
 .formkit-form[data-uid="81e2543d9b"] .formkit-spinner > div:nth-child(1) {
@@ -1124,23 +1078,78 @@ label::after {
   animation-delay: -0.16s;
 }
 
-.formkit-form[data-uid="81e2543d9b"]
-.formkit-submit[data-active]
-.formkit-spinner {
+.formkit-form[data-uid="81e2543d9b"] .formkit-submit[data-active] .formkit-spinner {
   opacity: 1;
   height: 100%;
   width: 50px;
 }
 
-.formkit-form[data-uid="81e2543d9b"]
-.formkit-submit[data-active]
-.formkit-spinner
-~ span {
+.formkit-form[data-uid="81e2543d9b"] .formkit-submit[data-active] .formkit-spinner ~ span {
   opacity: 0;
 }
 
 .formkit-form[data-uid="81e2543d9b"] .formkit-powered-by[data-active="false"] {
   opacity: 0.35;
+}
+
+.formkit-form[data-uid="81e2543d9b"] blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  border-left: 5px solid #e1e1e1;
+}
+
+.formkit-form[data-uid="81e2543d9b"] [data-style="clean"] {
+  width: 100%;
+}
+
+.formkit-form[data-uid="81e2543d9b"] .formkit-fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.formkit-form[data-uid="81e2543d9b"] .formkit-field, .formkit-form[data-uid="81e2543d9b"] .formkit-submit {
+  margin: 0 0 15px 0;
+  padding: 0.25em;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+}
+
+.formkit-form[data-uid="81e2543d9b"] .formkit-powered-by {
+  color: inherit;
+  display: block;
+  font-size: 12px;
+  margin: 0;
+  text-align: center;
+}
+
+.formkit-form[data-uid="81e2543d9b"][min-width~="700"] [data-style="clean"], .formkit-form[data-uid="81e2543d9b"][min-width~="800"] [data-style="clean"] {
+  padding: 10px;
+}
+
+.formkit-form[data-uid="81e2543d9b"][min-width~="700"] .formkit-fields[data-stacked="false"], .formkit-form[data-uid="81e2543d9b"][min-width~="800"] .formkit-fields[data-stacked="false"] {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.formkit-form[data-uid="81e2543d9b"][min-width~="700"] .formkit-fields[data-stacked="false"] .formkit-field, .formkit-form[data-uid="81e2543d9b"][min-width~="800"] .formkit-fields[data-stacked="false"] .formkit-field, .formkit-form[data-uid="81e2543d9b"][min-width~="700"] .formkit-fields[data-stacked="false"] .formkit-submit, .formkit-form[data-uid="81e2543d9b"][min-width~="800"] .formkit-fields[data-stacked="false"] .formkit-submit {
+  margin: 0 5px 15px 5px;
+}
+
+.formkit-form[data-uid="81e2543d9b"][min-width~="700"] .formkit-fields[data-stacked="false"] .formkit-field, .formkit-form[data-uid="81e2543d9b"][min-width~="800"] .formkit-fields[data-stacked="false"] .formkit-field {
+  -ms-flex: 100 1 auto;
+  -webkit-box-flex: 100;
+          flex: 100 1 auto;
+}
+
+.formkit-form[data-uid="81e2543d9b"][min-width~="700"] .formkit-fields[data-stacked="false"] .formkit-submit, .formkit-form[data-uid="81e2543d9b"][min-width~="800"] .formkit-fields[data-stacked="false"] .formkit-submit {
+  -ms-flex: 1 1 auto;
+  -webkit-box-flex: 1;
+          flex: 1 1 auto;
 }
 
 @-webkit-keyframes formkit-bouncedelay-formkit-form-data-uid-81e2543d9b- {
@@ -1167,96 +1176,6 @@ label::after {
     -webkit-transform: scale(1);
     transform: scale(1);
   }
-}
-
-.formkit-form[data-uid="81e2543d9b"] blockquote {
-  padding: 10px 20px;
-  margin: 0 0 20px;
-  border-left: 5px solid #e1e1e1;
-}
-
-.formkit-form[data-uid="81e2543d9b"] {
-  max-width: 700px;
-}
-
-.formkit-form[data-uid="81e2543d9b"] [data-style="clean"] {
-  width: 100%;
-}
-
-.formkit-form[data-uid="81e2543d9b"] .formkit-fields {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin: 0 auto;
-}
-
-.formkit-form[data-uid="81e2543d9b"] .formkit-field,
-.formkit-form[data-uid="81e2543d9b"] .formkit-submit {
-  margin: 0 0 15px 0;
-  padding: 0.25em;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 100%;
-          flex: 1 0 100%;
-}
-
-.formkit-form[data-uid="81e2543d9b"] .formkit-powered-by {
-  color: #7d7d7d;
-  display: block;
-  font-size: 12px;
-  margin: 0;
-  text-align: center;
-}
-
-.formkit-form[data-uid="81e2543d9b"][min-width~="700"] [data-style="clean"],
-.formkit-form[data-uid="81e2543d9b"][min-width~="800"] [data-style="clean"] {
-  padding: 10px;
-}
-
-.formkit-form[data-uid="81e2543d9b"][min-width~="700"]
-.formkit-fields[data-stacked="false"],
-.formkit-form[data-uid="81e2543d9b"][min-width~="800"]
-.formkit-fields[data-stacked="false"] {
-  margin-left: -5px;
-  margin-right: -5px;
-}
-
-.formkit-form[data-uid="81e2543d9b"][min-width~="700"]
-.formkit-fields[data-stacked="false"]
-.formkit-field,
-.formkit-form[data-uid="81e2543d9b"][min-width~="800"]
-.formkit-fields[data-stacked="false"]
-.formkit-field,
-.formkit-form[data-uid="81e2543d9b"][min-width~="700"]
-.formkit-fields[data-stacked="false"]
-.formkit-submit,
-.formkit-form[data-uid="81e2543d9b"][min-width~="800"]
-.formkit-fields[data-stacked="false"]
-.formkit-submit {
-  margin: 0 5px 15px 5px;
-}
-
-.formkit-form[data-uid="81e2543d9b"][min-width~="700"]
-.formkit-fields[data-stacked="false"]
-.formkit-field,
-.formkit-form[data-uid="81e2543d9b"][min-width~="800"]
-.formkit-fields[data-stacked="false"]
-.formkit-field {
-  -ms-flex: 100 1 auto;
-  -webkit-box-flex: 100;
-          flex: 100 1 auto;
-}
-
-.formkit-form[data-uid="81e2543d9b"][min-width~="700"]
-.formkit-fields[data-stacked="false"]
-.formkit-submit,
-.formkit-form[data-uid="81e2543d9b"][min-width~="800"]
-.formkit-fields[data-stacked="false"]
-.formkit-submit {
-  -ms-flex: 1 1 auto;
-  -webkit-box-flex: 1;
-          flex: 1 1 auto;
 }
 
 .klaro .cookie-modal, .klaro .cookie-notice {
