@@ -120,6 +120,12 @@ textarea {
   resize: vertical;
 }
 
+button {
+  border-radius: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
 body {
   margin: 0 auto;
   width: 100%;
