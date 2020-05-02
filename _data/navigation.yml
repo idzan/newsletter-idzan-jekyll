@@ -1,8 +1,8 @@
 - name: Home
-  link: /
+  link: https://idzan.eu/
 - name: About
-  link: /about.html
+  link: https://idzan.eu/about.html
 - name: Projects
-  link: /projects.html
+  link: https://idzan.eu/projects.html
 - name: Contact
-  link: /contact.html
+  link: https://idzan.eu/contact.html

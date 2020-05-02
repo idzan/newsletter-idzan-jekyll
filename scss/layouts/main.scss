@@ -3,7 +3,7 @@ main {
     grid-area: main;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: 5em auto;
+    grid-template-rows: auto auto;
 }
 
 h1 {
