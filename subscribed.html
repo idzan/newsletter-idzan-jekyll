@@ -1,0 +1,42 @@
+---
+title: You are Subscribed Marko Idžan's Newsletter
+description: You are now Subscribed to Marko Idžan’s Official Newsletter where you can find all of his latest works and Content Updates on Social Media Platforms
+permalink:
+image: img/og-image.png
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    {% include site_verification.html %}
+
+    {% include favicons_styling.html %}
+
+    {% include header/open_graph.html %}
+
+    {% include header/twitter_card.html %}
+
+    <title>{{ page.title }}</title>
+
+    <!-- Meta Tagovi -->
+    <meta name="title" content="{{ page.title }}">
+    <meta name="description" content="{{ page.description }}">
+</head>
+<body>
+    <header>
+        {% include navigation.html %}
+    </header>
+    <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
+    <main>
+        <section>
+            <h1>Subscribe to my Newsletter</h1>
+            <p>Success You are now Subscribed to newsletter! Now check your email to confirm your subscription.</p>
+        </section>
+    </main>
+    {% include footer.html %}
+    {% include scripts.html %}
+</body>
+</html>
